@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <style>
+        /* .onediv{
+            border: 1px solid black;
+        } */
+
+        H1 {
+            font-family: sans-serif;
+            letter-spacing: -1px;
+            margin: -1;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        span {
+            margin: 10px;
+        }
+
+        .form {
+            /* border: 1px solid black; */
+            margin: 5px;
+            padding: 10px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="onediv">
+        <H1>Job Application Form</H1>
+        <hr noshade="body" color="black" size="3px">
+        <p style="margin-top: -1px;font-family: Arial, Helvetica, sans-serif;font-size: medium;">Thank you for your
+            interest in working with us. Please check below for available job opportunities that meet your
+            criteria and send your application by filling out the Job Application Form.</p>
+        <form class="form" method="post"><br>
+            <div style="margin-bottom: 5px;">Name</div>
+            <input type="text" name="Name" maxlength="20" placeholder="  First Name" style="width:600px;">
+            <span><input type="text" name="Name" maxlength="20" placeholder="  Last Name" style="width:600px;"></span>
+
+            <div style="margin-top: 30px;margin-bottom: 5px;">Email</div>
+            <div><input type="email" name="email" placeholder="  john.doe@gmail.com" style="width: 1215px;"></div>
+
+            <div style="margin-top: 30px;margin-bottom: 10px; display: inline-block;">What position are you applying
+                for? </div>
+            <span style="margin-left: 380px;">Available Date</span>
+            <div style="display: inline;"><select name="Position" style="width: 600px;">
+                    <option value="">--Select Position-- </option>
+                    <option value="manager">Manager</option>
+                    <option value="analyst">Analyst</option>
+                    <option value="Coder">Coder</option>
+                    <option value="peon">Peon</option>
+                </select></div>
+            <span style="margin-left: 10px;"><input type="date" name="date" style="width: 600px;"></span>
+
+            <div style="margin-bottom: 10px;margin-top: 30px;">What is your current employee status?</div>
+            <input type="radio" name="employed"> Employed
+            <input type="radio" name="selfemployed" style="margin-left: 520px;margin-top: 5px;"> Self-Employed<br>
+            <input type="radio" name="unemployed"> Unemployed
+            <input type="radio" name="student" style="margin-left: 503px;margin-top: 10px;"> Student
+
+            <br><span style="margin-top: 30px;display: inline-block;margin-top: 30px;">Please provide your resume
+                link</span>
+            <span style="margin-left: 382px;margin-top: 30px;">Please upload your resume</span>
+            <input type="url" name="url" placeholder="https://www.example.com/"
+                style="display: inline-block;width: 600px;margin-top: 2px;">
+            <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" placeholder="Resume"
+                style="width: 600px;margin-left: 10px;">
+
+            <div style="margin-top: 40px;margin-bottom: 10px;">Do you have reference? (Optional)</div>
+            <input type="text" name="text" placeholder="First" style="width: 600px;">
+            <input type="text" name="text" placeholder="Last" style="width: 600px;margin-left: 10px;">
+
+            <div style="margin-top: 40px;margin-bottom: 10px;">Reference Email</div>
+            <input type="email" name="email" placeholder="john.doe@example.com" style="width: 1215;">
+
+            <input type="button" value="Reset" name="reset" style="margin-top: 40px;">
+            <input type="button" value="Apply" style="margin-left: 10px;background-color: black;color: white;">
+        </form>
+    </div>
+</body>
+
+</html>
